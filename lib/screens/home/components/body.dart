@@ -16,6 +16,27 @@ class Body extends StatelessWidget {
           TitleWithMoreButton( 
             title: "Recommended",
             press: (){},
+          ),
+          Container(
+            width: size.width * 0.4,
+            child: Column(
+              children: <Widget>[
+                Image.asset("assets/images/image_1.png"),
+                Container(
+                  padding: EdgeInsets.all(kDefaultPadding/2),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0, 10),
+                        blurRadius: 50,
+                        color: kPrimaryColor.withAlpha((255 * 0.23).round()),
+                      )
+                    ]
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
