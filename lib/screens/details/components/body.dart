@@ -30,29 +30,7 @@ class MyWidget extends StatelessWidget {
                         ),
                     ),
                     Spacer(),
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: size.height *0.3),
-                      padding: EdgeInsets.all(kDefaultPadding/2),
-                      height: 62,
-                      width: 62,
-                      decoration: BoxDecoration(
-                        color: kBackgroundColor,
-                        borderRadius: BorderRadius.circular(6),
-                        boxShadow: [
-                          BoxShadow(
-                            offset: Offset(0, 15),
-                            blurRadius: 22,
-                            color: kPrimaryColor.withAlpha((255*0.22).round())
-                          ),
-                          BoxShadow(
-                            offset: Offset(-15, -15),
-                            blurRadius: 20,
-                            color: Colors.white
-                          )
-                        ]
-                      ),
-                      child: SvgPicture.asset("assets/icons/suns.svg"),
-                    )
+                    IconCard()
                   ],
                 ),
               )
@@ -82,6 +60,41 @@ class MyWidget extends StatelessWidget {
           ),
         )
       ],
+    );
+  }
+}
+
+class IconCard extends StatelessWidget {
+  const IconCard({
+    super.key,
+    
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Container(
+      margin: EdgeInsets.symmetric(vertical: size.height *0.3),
+      padding: EdgeInsets.all(kDefaultPadding/2),
+      height: 62,
+      width: 62,
+      decoration: BoxDecoration(
+        color: kBackgroundColor,
+        borderRadius: BorderRadius.circular(6),
+        boxShadow: [
+          BoxShadow(
+            offset: Offset(0, 15),
+            blurRadius: 22,
+            color: kPrimaryColor.withAlpha((255*0.22).round())
+          ),
+          BoxShadow(
+            offset: Offset(-15, -15),
+            blurRadius: 20,
+            color: Colors.white
+          )
+        ]
+      ),
+      child: SvgPicture.asset("assets/icons/suns.svg"),
     );
   }
 }
