@@ -22,7 +22,14 @@ class Body extends StatelessWidget {
                     bottomRight: Radius.circular(36)
                   )
                 ),
-              )
+              ),
+              Positioned(
+
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  height: 54,
+                  
+                ))
             ],
           ),
         )
