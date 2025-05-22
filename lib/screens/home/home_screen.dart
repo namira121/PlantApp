@@ -23,6 +23,23 @@ class HomeScreen extends StatelessWidget {
             )
           ]
         ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              onPressed: (){}, 
+              icon: SvgPicture.asset("assets/icons/flower.svg"),
+            ),
+            IconButton(
+              onPressed: (){}, 
+              icon: SvgPicture.asset("assets/icons/heart-icon.svg"),
+            ),
+            IconButton(
+              onPressed: (){}, 
+              icon: SvgPicture.asset("assets/icons/user-icon.svg"),
+            ),
+          ],
+        ),
       ),
     );
   }
