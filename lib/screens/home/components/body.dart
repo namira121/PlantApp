@@ -17,53 +17,67 @@ class Body extends StatelessWidget {
             title: "Recommended",
             press: (){},
           ),
+          RecommendPlantCard(size: size)
+        ],
+      ),
+    );
+  }
+}
+
+class RecommendPlantCard extends StatelessWidget {
+  const RecommendPlantCard({
+    super.key,
+    required this.size,
+  });
+
+  final Size size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: size.width * 0.4,
+      child: Column(
+        children: <Widget>[
+          Image.asset("assets/images/image_1.png"),
           Container(
-            width: size.width * 0.4,
-            child: Column(
+            padding: EdgeInsets.all(kDefaultPadding/2),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(10),
+                bottomRight: Radius.circular(10)
+              ),
+              boxShadow: [
+                BoxShadow(
+                  offset: Offset(0, 10),
+                  blurRadius: 50,
+                  color: kPrimaryColor.withAlpha((255 * 0.23).round()),
+                )
+              ]
+            ),
+            child: Row(
               children: <Widget>[
-                Image.asset("assets/images/image_1.png"),
-                Container(
-                  padding: EdgeInsets.all(kDefaultPadding/2),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(10),
-                      bottomRight: Radius.circular(10)
-                    ),
-                    boxShadow: [
-                      BoxShadow(
-                        offset: Offset(0, 10),
-                        blurRadius: 50,
-                        color: kPrimaryColor.withAlpha((255 * 0.23).round()),
+                RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: "Samantha\n".toUpperCase(),
+                        style: Theme.of(context).textTheme.labelLarge,
+                      ),
+                      TextSpan(
+                        text: "Russia".toUpperCase(),
+                        style: TextStyle(
+                          color: kPrimaryColor.withAlpha((255*0.5).round())
+                        )
                       )
                     ]
-                  ),
-                  child: Row(
-                    children: <Widget>[
-                      RichText(
-                        text: TextSpan(
-                          children: [
-                            TextSpan(
-                              text: "Samantha\n".toUpperCase(),
-                              style: Theme.of(context).textTheme.labelLarge,
-                            ),
-                            TextSpan(
-                              text: "Russia".toUpperCase(),
-                              style: TextStyle(
-                                color: kPrimaryColor.withAlpha((255*0.5).round())
-                              )
-                            )
-                          ]
-                        )
-                      ),
-                      Text('\$440', 
-                      style: Theme.of(context)
-                      .textTheme
-                      .labelLarge!
-                      .copyWith(color: kPrimaryColor))
-                    ],
-                  ),
-                )
+                  )
+                ),
+                Text('\$440', 
+                style: Theme.of(context)
+                .textTheme
+                .labelLarge!
+                .copyWith(color: kPrimaryColor))
               ],
             ),
           )
