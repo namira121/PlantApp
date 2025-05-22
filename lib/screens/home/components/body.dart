@@ -8,7 +8,19 @@ class Body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Column(
       children: <Widget>[
-        Container()
+        Container(
+          height: size.height * 2,
+          child: Stack(
+            children: <Widget>[
+              Container(
+                height: size.height * 0.2 -27,
+                decoration: BoxDecoration(
+                  
+                ),
+              )
+            ],
+          ),
+        )
       ],
     );
   }
