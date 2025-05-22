@@ -22,7 +22,10 @@ class Body extends StatelessWidget {
           TitleWithMoreButton(
             title: "Featured Plants", 
             press: (){}),
-          FeaturedPlantCard(size: size)
+          FeaturedPlantCard(
+            image: "assets/images/bottom_img_1.png", 
+            press: (){},
+          )
         ],
       ),
     );
