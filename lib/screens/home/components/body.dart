@@ -12,26 +12,37 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Headwithsearch(size: size),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-            child: Row(
-              children: [
-                TitleWithCustomUnderline(text: "Recommended"),
-                Spacer(),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: kPrimaryColor,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                  ),
-                  onPressed: (){},
-                  child: Text(
-                    "More",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                )
-              ],
+          TitleWithMoreButton()
+        ],
+      ),
+    );
+  }
+}
+
+class TitleWithMoreButton extends StatelessWidget {
+  const TitleWithMoreButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+      child: Row(
+        children: [
+          TitleWithCustomUnderline(text: "Recommended"),
+          Spacer(),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: kPrimaryColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+            onPressed: (){},
+            child: Text(
+              "More",
+              style: TextStyle(color: Colors.white),
             ),
           )
         ],
