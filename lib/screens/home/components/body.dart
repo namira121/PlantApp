@@ -11,6 +11,17 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Headwithsearch(size: size),
+          Container(
+            height: 24,
+            child: Stack(
+              children: <Widget>[
+                Text(
+                  "Recommended",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          )
         ],
       ),
     );
