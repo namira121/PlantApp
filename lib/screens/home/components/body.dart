@@ -19,6 +19,7 @@ class Body extends StatelessWidget {
 
   Container HeadWithSearch(Size size, BuildContext context) {
     return Container(
+        margin: EdgeInsets.only(bottom: kDefaultPadding * 2.5),
         height: size.height * 0.2,
         child: Stack(
           children: <Widget>[
