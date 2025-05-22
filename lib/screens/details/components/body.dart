@@ -31,6 +31,7 @@ class MyWidget extends StatelessWidget {
                     ),
                     Spacer(),
                     Container(
+                      margin: EdgeInsets.symmetric(vertical: size.height *0.3),
                       padding: EdgeInsets.all(kDefaultPadding/2),
                       height: 62,
                       width: 62,
