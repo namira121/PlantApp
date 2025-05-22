@@ -23,6 +23,16 @@ class Body extends StatelessWidget {
                     bottomRight: Radius.circular(36),
                   ),
                 ),
+                child: Row(
+                  children: <Widget>[
+                    Text(
+                      'Hi Uishopy!',
+                      style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                        color: Colors.white, fontWeight: FontWeight.bold
+                      ),
+                    )
+                  ],
+                ),
               ),
               Positioned(
                 bottom: 0,
