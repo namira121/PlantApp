@@ -11,14 +11,14 @@ class Body extends StatelessWidget {
     return Column(
       children: <Widget>[
         Container(
-          height: size.height * 2,
+          height: size.height * 0.2,
           child: Stack(
             children: <Widget>[
               Container(
                 padding: EdgeInsets.only(
                   left: kDefaultPadding,
                   right: kDefaultPadding,
-                  bottom: 36 + kDefaultPadding
+                  bottom: 36 + kDefaultPadding,
                 ),
                 height: size.height * 0.2 - 27,
                 decoration: BoxDecoration(
