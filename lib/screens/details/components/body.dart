@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:plant_app_081/constants.dart';
-import 'package:plant_app_081/screens/details/components/icon_card.dart';
 import 'package:plant_app_081/screens/details/components/image_and_icon.dart';
 import 'package:plant_app_081/screens/details/components/title_and_price.dart';
 
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
+class Body extends StatelessWidget {
+  const Body({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +29,8 @@ class MyWidget extends StatelessWidget {
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(20)
                       )
-                    )
+                    ),
+                    backgroundColor: kPrimaryColor
                   ),
                   onPressed: (){}, 
                   child: Text("Buy Now",

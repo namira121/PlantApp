@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:plant_app_081/components/mybottomnavbar.dart';
-import 'package:plant_app_081/constants.dart';
 import 'package:plant_app_081/screens/home/components/body.dart';
 
 class HomeScreen extends StatelessWidget {
