@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:plant_app_081/constants.dart';
 import 'package:plant_app_081/screens/details/components/image_and_icon.dart';
 import 'package:plant_app_081/screens/details/components/title_and_price.dart';
+import 'package:plant_app_081/screens/maps/home_maps.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -43,8 +44,13 @@ class Body extends StatelessWidget {
             ),
             Expanded(
               child: ElevatedButton(
-                onPressed: (){}, 
-                child: Text("Description")))
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                  );
+                },
+                child: const Text("Shipping"),))
             ],
           )
         ],
