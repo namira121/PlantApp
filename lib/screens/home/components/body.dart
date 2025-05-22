@@ -12,7 +12,10 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Headwithsearch(size: size),
-          TitleWithMoreButton()
+          TitleWithMoreButton( 
+            title: "Recommended",
+            press: (){},
+          )
         ],
       ),
     );
@@ -21,8 +24,13 @@ class Body extends StatelessWidget {
 
 class TitleWithMoreButton extends StatelessWidget {
   const TitleWithMoreButton({
-    super.key,
-  });
+    Key? key,
+    required this.title,
+    required this.press
+  }): super(key: key);
+
+  final String title;
+  final VoidCallback press;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +38,7 @@ class TitleWithMoreButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Row(
         children: [
-          TitleWithCustomUnderline(text: "Recommended"),
+          TitleWithCustomUnderline(text: title),
           Spacer(),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -39,7 +47,7 @@ class TitleWithMoreButton extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
             ),
-            onPressed: (){},
+            onPressed: press,
             child: Text(
               "More",
               style: TextStyle(color: Colors.white),
