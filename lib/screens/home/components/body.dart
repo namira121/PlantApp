@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plant_app_081/constants.dart';
@@ -17,13 +15,13 @@ class Body extends StatelessWidget {
           child: Stack(
             children: <Widget>[
               Container(
-                height: size.height * 0.2 -27,
+                height: size.height * 0.2 - 27,
                 decoration: BoxDecoration(
                   color: kPrimaryColor,
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(36),
-                    bottomRight: Radius.circular(36)
-                  )
+                    bottomRight: Radius.circular(36),
+                  ),
                 ),
               ),
               Positioned(
@@ -40,19 +38,21 @@ class Body extends StatelessWidget {
                       BoxShadow(
                         offset: Offset(0, 10),
                         blurRadius: 50,
-                        color: kPrimaryColor.withOpacity(0.23)
-                      )
-                    ]
+                        color: kPrimaryColor.withAlpha((255 * 0.5).round()),
+                      ),
+                    ],
                   ),
                   child: Row(
                     children: <Widget>[
                       Expanded(
                         child: TextField(
-                          onChanged: (value){},
+                          onChanged: (value) {},
                           decoration: InputDecoration(
                             hintText: "Search",
                             hintStyle: TextStyle(
-                              color: kPrimaryColor.withOpacity(0.5),
+                              color: kPrimaryColor.withAlpha(
+                                (255 * 0.5).round(),
+                              ),
                             ),
                             enabledBorder: InputBorder.none,
                             focusedBorder: InputBorder.none,
@@ -62,10 +62,11 @@ class Body extends StatelessWidget {
                       SvgPicture.asset("assets/icons/search.svg"),
                     ],
                   ),
-                ))
+                ),
+              ),
             ],
           ),
-        )
+        ),
       ],
     );
   }
