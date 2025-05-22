@@ -2,8 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plant_app_081/constants.dart';
 
+class Headwithsearch extends StatelessWidget {
+  const Headwithsearch({
+    Key? key,
+    required this.size,
+    }): super(key: key);
 
-Container HeadWithSearch(Size size, BuildContext context) {
+    final Size size;
+
+  @override
+  Widget build(BuildContext context) {
     return Container(
         margin: EdgeInsets.only(bottom: kDefaultPadding * 2.5),
         height: size.height * 0.2,
@@ -85,3 +93,4 @@ Container HeadWithSearch(Size size, BuildContext context) {
         ),
       );
   }
+}
