@@ -43,7 +43,12 @@ class Body extends StatelessWidget {
                               text: "Samantha".toUpperCase(),
                               style: Theme.of(context).textTheme.button,
                             ),
-                            TextSpan(text: "Russia")
+                            TextSpan(
+                              text: "Russia".toUpperCase(),
+                              style: TextStyle(
+                                color: kPrimaryColor.withAlpha((255*0.5).round())
+                              )
+                            )
                           ]
                         ))
                     ],
