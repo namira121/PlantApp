@@ -18,7 +18,10 @@ class Body extends StatelessWidget {
             title: "Recommended",
             press: (){},
           ),
-          RecommendsPlants()
+          RecommendsPlants(),
+          TitleWithMoreButton(
+            title: "Featured Plants", 
+            press: (){})
         ],
       ),
     );
