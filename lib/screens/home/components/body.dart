@@ -21,7 +21,17 @@ class Body extends StatelessWidget {
           RecommendsPlants(),
           TitleWithMoreButton(
             title: "Featured Plants", 
-            press: (){})
+            press: (){}),
+          Container(
+            width: size.width * 0.8,
+            height: 185,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              image: DecorationImage(
+                image: AssetImage("assets/images/bottom_img_1.png"),
+              )
+            ),
+          )
         ],
       ),
     );
