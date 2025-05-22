@@ -30,7 +30,7 @@ class MyWidget extends StatelessWidget {
                         ),
                     ),
                     Spacer(),
-                    IconCard()
+                    IconCard(icon: "assets/icons/sun.svg",)
                   ],
                 ),
               )
@@ -66,9 +66,12 @@ class MyWidget extends StatelessWidget {
 
 class IconCard extends StatelessWidget {
   const IconCard({
-    super.key,
+    super.key, 
+    required this.icon,
     
   });
+
+  final String icon;
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +97,7 @@ class IconCard extends StatelessWidget {
           )
         ]
       ),
-      child: SvgPicture.asset("assets/icons/suns.svg"),
+      child: SvgPicture.asset(icon),
     );
   }
 }
