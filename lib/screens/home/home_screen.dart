@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:plant_app_081/components/mybottomnavbar.dart';
 import 'package:plant_app_081/constants.dart';
 import 'package:plant_app_081/screens/home/components/body.dart';
 
@@ -11,41 +12,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
-      bottomNavigationBar: Container(
-        padding: EdgeInsets.only(
-          left: kDefaultPadding * 2,
-          right: kDefaultPadding * 2,
-          bottom: kDefaultPadding
-        ),
-        height: 80,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              offset: Offset(0, -10),
-              blurRadius: 35,
-              color: kPrimaryColor.withAlpha((255*0.38).round())
-            )
-          ]
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            IconButton(
-              onPressed: (){}, 
-              icon: SvgPicture.asset("assets/icons/flower.svg"),
-            ),
-            IconButton(
-              onPressed: (){}, 
-              icon: SvgPicture.asset("assets/icons/heart-icon.svg"),
-            ),
-            IconButton(
-              onPressed: (){}, 
-              icon: SvgPicture.asset("assets/icons/user-icon.svg"),
-            ),
-          ],
-        ),
-      ),
+      bottomNavigationBar: MyBottomNavBar(),
     );
   }
 
@@ -58,3 +25,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
