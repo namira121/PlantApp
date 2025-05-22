@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:plant_app_081/constants.dart';
 
 class Body extends StatelessWidget {
@@ -47,6 +48,7 @@ class Body extends StatelessWidget {
                     children: <Widget>[
                       Expanded(
                         child: TextField(
+                          onChanged: (value){},
                           decoration: InputDecoration(
                             hintText: "Search",
                             hintStyle: TextStyle(
@@ -57,6 +59,7 @@ class Body extends StatelessWidget {
                           ),
                         ),
                       ),
+                      SvgPicture.asset("assets/icons/search.svg"),
                     ],
                   ),
                 ))
