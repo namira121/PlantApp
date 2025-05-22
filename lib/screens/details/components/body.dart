@@ -38,8 +38,14 @@ class MyWidget extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 16
-                  ),)),
-              )
+                  ),
+                )
+              ),
+            ),
+            Expanded(
+              child: ElevatedButton(
+                onPressed: (){}, 
+                child: Text("Description")))
             ],
           )
         ],
