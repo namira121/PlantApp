@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:plant_app_081/constants.dart';
-import 'package:plant_app_081/screens/home/components/headwithsearch.dart';
+import 'headwithsearch.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -12,7 +10,7 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          HeadWithSearch(size, context),
+          Headwithsearch(size: size),
         ],
       ),
     );
