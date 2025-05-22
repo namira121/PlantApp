@@ -26,6 +26,10 @@ class Body extends StatelessWidget {
                   padding: EdgeInsets.all(kDefaultPadding/2),
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(10),
+                      bottomRight: Radius.circular(10)
+                    ),
                     boxShadow: [
                       BoxShadow(
                         offset: Offset(0, 10),
