@@ -1,16 +1,7 @@
-# plant_app_081
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1747950157](https://github.com/user-attachments/assets/129ef556-0cad-4582-9278-b53de18b7d0e)
+![Screenshot_1747950199](https://github.com/user-attachments/assets/c1bc6a41-61ad-4847-ba7f-451893c63794)
+![Screenshot_1747950243](https://github.com/user-attachments/assets/b77bc967-b62d-4e84-8b65-d62b5bbc7541)
+![Screenshot_1747950278](https://github.com/user-attachments/assets/a121a591-0306-4134-b48f-995fe09f7a65)
+![Screenshot_1747950294](https://github.com/user-attachments/assets/7388db30-c9d3-46c4-beda-20bdf3c875f6)
+![Screenshot_1747950300](https://github.com/user-attachments/assets/6f0a7b37-d516-4c0a-af73-2f76a8301378)
+![Screenshot_1747952543](https://github.com/user-attachments/assets/093edab3-7d4b-40d7-8b43-aec6a5fd0116)
