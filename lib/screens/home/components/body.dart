@@ -22,9 +22,13 @@ class Body extends StatelessWidget {
           TitleWithMoreButton(
             title: "Featured Plants", 
             press: (){}),
-          FeaturedPlantCard(
-            image: "assets/images/bottom_img_1.png", 
-            press: (){},
+          Row(
+            children: <Widget>[
+              FeaturedPlantCard(
+                image: "assets/images/bottom_img_1.png", 
+                press: (){},
+              ),
+            ],
           )
         ],
       ),
@@ -57,6 +61,7 @@ class FeaturedPlantCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           image: DecorationImage(
+            fit: BoxFit.cover,
             image: AssetImage(image),
           )
         ),
