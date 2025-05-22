@@ -7,12 +7,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        leading: IconButton(
-          onPressed: () {}, 
-          icon: SvgPicture.asset("assets/icons/menu.svg")),
-      ),
+      appBar: buildAppBar(),
+    );
+  }
+
+  AppBar buildAppBar() {
+    return AppBar(
+      elevation: 0,
+      leading: IconButton(
+        onPressed: () {}, 
+        icon: SvgPicture.asset("assets/icons/menu.svg")),
     );
   }
 }
