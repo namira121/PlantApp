@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app_081/constants.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -15,7 +16,11 @@ class Body extends StatelessWidget {
               Container(
                 height: size.height * 0.2 -27,
                 decoration: BoxDecoration(
-                  
+                  color: kPrimaryColor,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(36),
+                    bottomRight: Radius.circular(36)
+                  )
                 ),
               )
             ],
