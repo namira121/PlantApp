@@ -34,6 +34,20 @@ class Body extends StatelessWidget {
                       )
                     ]
                   ),
+                  child: Row(
+                    children: <Widget>[
+                      RichText(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text: "Samantha".toUpperCase(),
+                              style: Theme.of(context).textTheme.button,
+                            ),
+                            TextSpan(text: "Russia")
+                          ]
+                        ))
+                    ],
+                  ),
                 )
               ],
             ),
