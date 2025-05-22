@@ -40,8 +40,8 @@ class Body extends StatelessWidget {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text: "Samantha".toUpperCase(),
-                              style: Theme.of(context).textTheme.button,
+                              text: "Samantha\n".toUpperCase(),
+                              style: Theme.of(context).textTheme.labelLarge,
                             ),
                             TextSpan(
                               text: "Russia".toUpperCase(),
@@ -50,7 +50,13 @@ class Body extends StatelessWidget {
                               )
                             )
                           ]
-                        ))
+                        )
+                      ),
+                      Text('\$440', 
+                      style: Theme.of(context)
+                      .textTheme
+                      .labelLarge!
+                      .copyWith(color: kPrimaryColor))
                     ],
                   ),
                 )
