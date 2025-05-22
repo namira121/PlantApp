@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:plant_app_081/constants.dart';
+import 'package:plant_app_081/screens/details/components/icon_card.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({super.key});
@@ -67,40 +68,3 @@ class MyWidget extends StatelessWidget {
   }
 }
 
-class IconCard extends StatelessWidget {
-  const IconCard({
-    super.key, 
-    required this.icon,
-    
-  });
-
-  final String icon;
-
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: size.height *0.3),
-      padding: EdgeInsets.all(kDefaultPadding/2),
-      height: 62,
-      width: 62,
-      decoration: BoxDecoration(
-        color: kBackgroundColor,
-        borderRadius: BorderRadius.circular(6),
-        boxShadow: [
-          BoxShadow(
-            offset: Offset(0, 15),
-            blurRadius: 22,
-            color: kPrimaryColor.withAlpha((255*0.22).round())
-          ),
-          BoxShadow(
-            offset: Offset(-15, -15),
-            blurRadius: 20,
-            color: Colors.white
-          )
-        ]
-      ),
-      child: SvgPicture.asset(icon),
-    );
-  }
-}
