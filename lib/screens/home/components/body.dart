@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:plant_app_081/constants.dart';
 
@@ -24,11 +26,23 @@ class Body extends StatelessWidget {
                 ),
               ),
               Positioned(
-
+                bottom: 0,
+                left: 0,
+                right: 0,
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
                   height: 54,
-                  
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0, 10),
+                        blurRadius: 50,
+                        color: kPrimaryColor.withOpacity(0.23)
+                      )
+                    ]
+                  ),
                 ))
             ],
           ),
